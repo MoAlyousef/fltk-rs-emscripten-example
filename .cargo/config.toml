@@ -1,0 +1,8 @@
+[target.wasm32-unknown-emscripten]
+rustflags = ["-C", "link-arg=-sWASM=1", 
+    "-C", "link-arg=-sASYNCIFY", 
+    "-C", "link-arg=-sALLOW_MEMORY_GROWTH", 
+    "-C", "link-arg=-sOFFSCREENCANVAS_SUPPORT=1", 
+    "-C", "link-arg=--bind",
+    "-C", "link-arg=--shell-file=minimal_shell.html"
+    ]
