@@ -10,9 +10,9 @@ checksum = "b048fb63fd8b5923fc5aa7b340d8e156aec7ec02f0c78fa8a6ddc2613f6f71de"
 
 [[package]]
 name = "cc"
-version = "1.1.21"
+version = "1.1.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "07b1695e2c7e8fc85310cde85aeaab7e3097f593c91d209d3f9df76c928100f0"
+checksum = "812acba72f0a070b003d3697490d2b55b837230ae7c6c6497f05cc2ddbb8d938"
 dependencies = [
  "shlex",
 ]
@@ -51,7 +51,7 @@ dependencies = [
 [[package]]
 name = "fltk"
 version = "1.4.34"
-source = "git+https://github.com/fltk-rs/fltk-rs#6dde8360158afb315bb6a42789eed9240de50b8a"
+source = "git+https://github.com/fltk-rs/fltk-rs#33da9927e566a4ed0a8bbfbd29f12198478d841d"
 dependencies = [
  "bitflags",
  "crossbeam-channel",
@@ -64,22 +64,31 @@ dependencies = [
 [[package]]
 name = "fltk-sys"
 version = "1.4.34"
-source = "git+https://github.com/fltk-rs/fltk-rs#6dde8360158afb315bb6a42789eed9240de50b8a"
+source = "git+https://github.com/fltk-rs/fltk-rs#33da9927e566a4ed0a8bbfbd29f12198478d841d"
 dependencies = [
  "cmake",
 ]
 
 [[package]]
 name = "once_cell"
-version = "1.19.0"
+version = "1.20.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3fdb12b2476b595f9358c5161aa467c2438859caa136dec86c26fdd2efe17b92"
+checksum = "82881c4be219ab5faaf2ad5e5e5ecdff8c66bd7402ca3160975c93b24961afd1"
+dependencies = [
+ "portable-atomic",
+]
 
 [[package]]
 name = "paste"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
+
+[[package]]
+name = "portable-atomic"
+version = "1.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cc9c68a3f6da06753e9335d63e27f6b9754dd1920d941135b7ea8224f141adb2"
 
 [[package]]
 name = "shlex"
