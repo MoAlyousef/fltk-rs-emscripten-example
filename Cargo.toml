@@ -8,3 +8,4 @@ fltk = {version = "^1.4", features=["single-threaded"] }
 
 [patch.crates-io]
 fltk = { git = "https://github.com/fltk-rs/fltk-rs" }
+
