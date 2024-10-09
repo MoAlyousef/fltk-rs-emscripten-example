@@ -11,7 +11,7 @@ env:
 
 jobs:
   build-wasm32-emscripten:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - uses: seanmiddleditch/gha-setup-ninja@master
@@ -21,4 +21,4 @@ jobs:
         with:
           targets: "wasm32-unknown-emscripten"
       - name: CI-Build
-        run: cargo build --release --target=wasm32-unknown-emscripten
+        run: cargo update && cargo build --release --target=wasm32-unknown-emscripten
