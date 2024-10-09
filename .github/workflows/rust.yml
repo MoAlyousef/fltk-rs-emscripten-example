@@ -21,4 +21,4 @@ jobs:
         with:
           targets: "wasm32-unknown-emscripten"
       - name: CI-Build
-        run: cargo update && cargo build --release --target=wasm32-unknown-emscripten
+        run: EMCMAKE=emcmake.bat cargo build --release --target=wasm32-unknown-emscripten
