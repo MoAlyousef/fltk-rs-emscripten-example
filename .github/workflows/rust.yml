@@ -24,8 +24,6 @@ jobs:
         run: cargo build --release --target=wasm32-unknown-emscripten
   build-wasm32-emscripten-win:
     runs-on: windows-latest
-    env:
-      EMCMAKE: emcmake.bat
     steps:
       - uses: actions/checkout@v4
       - uses: seanmiddleditch/gha-setup-ninja@master
