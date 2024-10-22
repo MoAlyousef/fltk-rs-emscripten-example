@@ -4,7 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-fltk = {version = "^1.4", features=["single-threaded"] }
-
-[patch.crates-io]
-fltk = { git = "https://github.com/fltk-rs/fltk-rs" }
+fltk = {version = "^1.4.35", features=["single-threaded"] }
